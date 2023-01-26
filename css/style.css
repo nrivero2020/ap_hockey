@@ -54,12 +54,12 @@ nav a {
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
     padding: 10px;
 }
 
 .img1 {
-    width: 150px;
+    width: 180px;
     padding: 10px;
 }
 
@@ -83,11 +83,9 @@ aside {
 }
 
 footer {
-    display: inline;
-}
-
-.container {
-
+    display: block;
+    text-align: center;
+    background-color: lightgray;
 }
 
 .home .contacto .acerca {
