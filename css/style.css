@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'comic sans ms';
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: xxx-large;
+    font-style: oblique;
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    display: block;
+}
+
+h3 {
+    margin-top: 15px;
+    font-style: oblique;
+}
+
+nav {
+    text-align: right;
+    padding: 10px;
+    float: right;
+}
+
+nav a {
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 3px 2px 1px darkgray;
+    margin: 2px 2px 5px;
+}
+
+
+.imgban {
+    width: 1518px;
+    height: 350px;
+    border: 1px solid black;
+    display: block;
+}
+
+.logo {
+    width: 150px;
+    padding: 10px;
+}
+
+.img1 {
+    width: 150px;
+    padding: 10px;
+}
+
+p {
+    text-indent: 1.5em;
+    margin-top: 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+}
+
+footer {
+    display: inline;
+}
+
+.container {
+
+}
+
+.home .contacto .acerca {
+    color: white;
+}
+
