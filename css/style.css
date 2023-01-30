@@ -28,13 +28,9 @@ h3 {
     margin-top: 15px;
     font-style: oblique;
 }
-
-nav {
-    text-align: right;
-    padding: 10px;
+nav{
     float: right;
 }
-
 nav a {
     text-align: right;
     text-decoration: none;
@@ -43,8 +39,19 @@ nav a {
     padding: 5px;
     box-shadow: 3px 2px 1px darkgray;
     margin: 2px 2px 5px;
+    position: relative;
 }
 
+section{
+    display: inline-block;
+    padding: 30px;
+    position: absolute;
+}
+
+aside{
+    display: inline-block;
+    padding: 20px;
+}
 
 .imgban {
     width: 1518px;
@@ -53,12 +60,12 @@ nav a {
     display: block;
 }
 
-.logo {
+.logo img{
     width: 180px;
     padding: 10px;
 }
 
-.img1 {
+.img1 img{
     width: 180px;
     padding: 10px;
 }
@@ -67,20 +74,6 @@ p {
     text-indent: 1.5em;
     margin-top: 0;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
-    flex: 70%;
-    padding: 30px;
-}
-
-aside {
-    flex: 30%;
-    padding: 20px;
-}
 
 footer {
     display: block;
@@ -88,7 +81,37 @@ footer {
     background-color: lightgray;
 }
 
-.home .contacto .acerca {
-    color: white;
+.colornav .home {
+    background-color: rgb(86, 172, 86);
 }
 
+.colornav .contact{
+    background-color:blue;
+}
+
+.colornav .about{
+    background-color:blue;
+}
+
+.colornava .home {
+    background-color: blue;
+}
+
+.colornava .contact{
+    background-color:blue;
+}
+
+.colornava .about{
+    background-color:rgb(86, 172, 86);
+}
+.colornavc .home {
+    background-color: blue;
+}
+
+.colornavc .contact{
+    background-color:rgb(86, 172, 86);
+}
+
+.colornavc .about{
+    background-color:blue;
+}
