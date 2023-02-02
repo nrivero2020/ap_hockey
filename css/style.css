@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: sPectral;
+    src: url("/font/SpectralSC-Light.ttf");
+}
 body {
-    font-family: 'comic sans ms';
+    font-family: 'sPectral';
     width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -15,6 +18,7 @@ body {
 h1 {
     font-size: xxx-large;
     font-style: oblique;
+    text-align: center;
 }
 
 h2 {
@@ -28,49 +32,79 @@ h3 {
     margin-top: 15px;
     font-style: oblique;
 }
-nav{
-    float: right;
-}
-nav a {
-    text-align: right;
+
+nav a{
     text-decoration: none;
-    color: white;
-    border: 1px solid black;
-    padding: 5px;
-    box-shadow: 3px 2px 1px darkgray;
-    margin: 2px 2px 5px;
-    position: relative;
-    top: 10px;
+    color: rgb(129, 126, 126);
+    padding: 10px 30px;
+    text-align: right;
+    border-radius: 999px;
+}
+
+nav a:hover{
+    background-color: rgb(199, 194, 194);
 }
 
 section{
-    display: inline-block;
+    display: block;
     padding: 30px;
-    position: absolute;
 }
 
 aside{
     display: inline-block;
     padding: 20px;
 }
-
+.baner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .imgban {
-    width: 1518px;
     height: 350px;
-    border: 1px solid black;
     display: block;
 }
 
-.logo img{
-    width: 180px;
-    padding: 10px;
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container_logo{
+    display: flex;
+    float: none;
+    width: 6rem;
+    height: 6rem;
+    flex-grow: 1;
+}
+.container_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
+.container_logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.container_main {
+    display: flex;
+}
 .img1 img{
     width: 180px;
     padding: 10px;
 }
 
+.rpp h2{
+    border: none;
+}
+
+.rpp p{
+    text-align: center;
+}
 p {
     text-indent: 1.5em;
     margin-top: 0;
@@ -82,37 +116,16 @@ footer {
     background-color: lightgray;
 }
 
-.colornav .home {
-    background-color: rgb(86, 172, 86);
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 60px;
 }
 
-.colornav .contact{
-    background-color:blue;
+#min ol{
+    list-style-type:lower-greek;
+    list-style-position: inside;
 }
-
-.colornav .about{
-    background-color:blue;
-}
-
-.colornava .home {
-    background-color: blue;
-}
-
-.colornava .contact{
-    background-color:blue;
-}
-
-.colornava .about{
-    background-color:rgb(86, 172, 86);
-}
-.colornavc .home {
-    background-color: blue;
-}
-
-.colornavc .contact{
-    background-color:rgb(86, 172, 86);
-}
-
-.colornavc .about{
-    background-color:blue;
+ol{
+  list-style-position: inside;  
 }
