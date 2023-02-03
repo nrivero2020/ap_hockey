@@ -7,6 +7,11 @@
     font-family: sPectral;
     src: url("/font/SpectralSC-Light.ttf");
 }
+
+@font-face {
+    font-family: sPectralReg;
+    src: url("/font/Spectral-Medium.ttf");
+}
 body {
     font-family: 'sPectral';
     width: 100%;
@@ -17,7 +22,6 @@ body {
 
 h1 {
     font-size: xxx-large;
-    font-style: oblique;
     text-align: center;
 }
 
@@ -29,8 +33,9 @@ h2 {
 }
 
 h3 {
-    margin-top: 15px;
-    font-style: oblique;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
 nav a{
@@ -108,6 +113,8 @@ aside{
 p {
     text-indent: 1.5em;
     margin-top: 0;
+    font-size: 17px;
+    font-family: 'sPectralReg';
 }
 
 footer {
@@ -122,10 +129,71 @@ ul{
     margin-left: 60px;
 }
 
-#min ol{
-    list-style-type:lower-greek;
+ol{
     list-style-position: inside;
 }
-ol{
-  list-style-position: inside;  
+
+li{
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: 'sPectralReg';
+}
+.min li{
+    margin-bottom: 0;
+    list-style-type:lower-alpha;
+    font-family: 'sPectralReg';
+}
+.minli{
+    font-size: unset;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td, th, tr{
+    padding: 10px 20px;
+    border: 0.5px solid gray;
+}
+.primercol{
+    border-top-left-radius: 5px;
+}
+.ultcol{
+    border-top-right-radius: 5px;
+}
+
+tfoot td{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(188, 226, 188);
+    background:linear-gradient(rgb(143, 225, 186), rgb(203, 200, 200));
+    text-decoration: underline;
+    font-size: smaller;
+}
+
+thead{
+    background-color: rgb(188, 226, 188);
+    background:linear-gradient(rgb(143, 225, 186), rgb(203, 200, 200))
+}
+
+h5{
+    text-decoration: underline;
+}
+
+.infconta{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container_tab{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container_tab img{
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    margin-top: 20px;
 }
