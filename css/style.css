@@ -80,6 +80,8 @@ aside{
     width: 6rem;
     height: 6rem;
     flex-grow: 1;
+    margin-left: 50px;
+    margin-top: 15px;
 }
 .container_nav{
     display: flex;
