@@ -199,3 +199,70 @@ h5{
     width: 550px;
     margin-top: 20px;
 }
+
+.school label{
+    display: table-cell;
+}
+.checkescuelas1{
+    display: inline-block;
+}
+.checkescuelas1 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+.checkescuelas2{
+    display: inline-block;
+}
+.checkescuelas2 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+
+
+.posit label{
+    display: table-cell;
+}
+.checkposition1{
+    display: inline-block;
+}
+.checkposition1 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+.checkposition2{
+    display: inline-block;
+}
+.checkposition2 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+
+.uniform label{
+    display: table-cell;
+}
+.checkmedidas1{
+    display: inline-block;
+}
+.checkmedidas1 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+.checkmedidas2{
+    display: inline-block;
+}
+.checkmedidas2 li{
+    list-style-type: none;
+    display: table-header-group;
+}
+
+.checkgrado{
+    display: flex;
+}
+.checkgrado li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+p{
+    text-indent: inherit;
+}
