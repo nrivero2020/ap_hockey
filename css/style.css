@@ -69,17 +69,11 @@ aside{
     display: block;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .container_logo{
     display: flex;
     float: none;
     width: 6rem;
     height: 6rem;
-    flex-grow: 1;
     margin-left: 50px;
     margin-top: 15px;
 }
@@ -87,9 +81,9 @@ aside{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-grow: 1;
     align-items: center;
     flex-direction: row-reverse;
+    padding: 30px;
 }
 
 .container_logo img{
@@ -297,10 +291,6 @@ p{
     padding-top: 10px;
 }
 
-/* .sub input{
-    width: 100px;
-    height: 25px;
-} */
 
 
 
