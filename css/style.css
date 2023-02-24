@@ -94,6 +94,12 @@ aside{
 .container_main {
     display: flex;
 }
+@media only screen and (max-width: 500px) {
+    .container_main{
+        flex-wrap: wrap;
+    }
+    
+}
 .img1 img{
     width: 180px;
     padding: 10px;
@@ -193,7 +199,6 @@ h5{
     justify-content: space-around;
     width: 500px;
     height: 500px;
-    margin-top: 20px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -211,6 +216,7 @@ h5{
         height: 300px;
         flex-wrap: wrap;
         margin-bottom: 10px;
+        margin-top: 20px;
     }
     
 }
