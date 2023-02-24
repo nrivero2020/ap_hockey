@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MDHL</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="./img/Logo_Mighty_ducks-01.ico">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDHL</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/Logo_Mighty_ducks-01.ico">
+</head>
+
 <body>
     <header>
         <div class="row">
@@ -36,7 +38,7 @@
         </div>
     </article>
     <main>
-        <form action="" method="get">
+        <form action="./showdata.html" method="get">
             <fieldset>
                 <legend>Registration Form</legend>
                 <div>
@@ -55,7 +57,7 @@
                 <div>
                     <label for="city">City:</label>
                     <input type="text" name="city" id="city">
-              
+
                     <label for="zipcode">Zip Code:</label>
                     <input type="text" name="zipecode" id="zipcode">
                 </div>
@@ -72,82 +74,131 @@
                 </div>
 
                 <div>
-                    <label for="grade">Grade:</label>
+                    <span>Grade: </span>
                     <ul>
-                        <div class = "checkgrado">
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for="">Pre-School</label></li>
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for=""><sup>1st</sup></label></li>
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for=""><sup>2nd</sup></label></li>
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for=""><sup>3rd</sup></label></li>
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for=""><sup>4th</sup></label></li>
-                            <li><input type="checkbox" name="education" id="closes" value="education"> <label for=""><sup>5th</sup></label></li>
+                        <div class="checkgrado">
+                            <li><input class="checkgrado1" type="radio" name="education" id="grado" value="education">
+                                <label for="">Pre-School</label></li>
+                            <li><input type="radio" name="education" id="primero" value="primero"> <label
+                                    for=""><sup>1st</sup></label></li>
+                            <li><input type="radio" name="education" id="segundo" value="segundo"> <label
+                                    for=""><sup>2nd</sup></label></li>
+                            <li><input type="radio" name="education" id="tercero" value="tercero"> <label
+                                    for=""><sup>3rd</sup></label></li>
+                            <li><input type="radio" name="education" id="cuarto" value="cuarto"> <label
+                                    for=""><sup>4th</sup></label></li>
+                            <li><input type="radio" name="education" id="quinto" value="quinto"> <label
+                                    for=""><sup>5th</sup></label></li>
                         </div>
                     </ul>
                 </div>
                 <div class="school">
-                    <label for="">Which elemantary school do you live near?</label>
-                    <br>
-                    <label for="">Closest School:</label>
-                        <div class = "checkescuelas1">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">AJ Katzenmaier</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Greenbay</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Howard and Yeager</label></li>
-                            </ul>
-                        </div>
-                        <div class="checkescuelas2">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Marjorie P Hart</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">North Elementary</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">South Elementary</label></li>
-                            </ul>
-                        </div>
-                </div>  
+                    <label for=""><b>Which elemantary school do you live near?</b></label>
+                    <label for=""><b>Closest School:</b></label>
+                </div>
+                <div class="escuelas">
+                    <div class="escu1">
+                        <ul>
+                            <li><input type="checkbox" name="cerca" id="aj" value="aj"> <label for="">AJ
+                                    Katzenmaier</label></li>
+                            <li><input type="checkbox" name="cerca" id="green" value="green"> <label
+                                    for="">Greenbay</label></li>
+                            <li><input type="checkbox" name="cerca" id="howard" value="howard"> <label for="">Howard and
+                                    Yeager</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="escu">
+                        <ul>
+                            <li><input type="checkbox" name="cerca" id="marjorie" value="marjorie"> <label
+                                    for="">Marjorie P Hart</label></li>
+                            <li><input type="checkbox" name="cerca" id="north" value="north"> <label for="">North
+                                    Elementary</label></li>
+                            <li><input type="checkbox" name="cerca" id="south" value="south"> <label for="">South
+                                    Elementary</label></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="posit">
-                    <label for="">What position(s) do you normally play? (check all that apply):</label>
-                        <div class = "checkposition1">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Forward</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Defense</label></li>
-                            </ul>
-                        </div> 
-                        <div class = "checkposition2">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Midfield</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Goalkeeper</label></li> 
-                            </ul>
-                        </div>
+                    <label for=""><b>What position(s) do you normally play? (check all that apply):</b></label>
+                </div>
+                <div class="position">
+                    <div class="pos1">
+                        <ul>
+                            <li><input type="checkbox" name="juego" id="forward" value="forward"> <label
+                                    for="">Forward</label></li>
+                            <li><input type="checkbox" name="juego" id="defense" value="defense"> <label
+                                    for="">Defense</label></li>
+                        </ul>
+                    </div>
+                    <div class="pos">
+                        <ul>
+                            <li><input type="checkbox" name="juego" id="mid" value="mid"> <label for="">Midfield</label>
+                            </li>
+                            <li><input type="checkbox" name="juego" id="goalk" value="goalk"> <label
+                                    for="">Goalkeeper</label></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="uniform">
-                    <label for="">Uniform Size:</label>
-                        <div class = "checkmedidas1">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Youth Small</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Youth Medium</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Youth Large</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Small</label></li>
-                            </ul>
-                        </div>
-                        <div class = "checkmedidas2">
-                            <ul>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Medium</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Large</label></li>
-                                <li><input type="checkbox" name="closes" id="closes" value="closes"> <label for="">Extra-Large</label></li>
-                            </ul>
-                        </div>
+                    <label for=""><b>Uniform Size:</b></label>
                 </div>
-                
+                <div class="talle">
+                    <div class="medida1">
+                        <ul>
+                            <li><input type="checkbox" name="talles" id="xsmal" value="xsmal"> <label for="">Youth
+                                    Small</label></li>
+                            <li><input type="checkbox" name="talles" id="xmed" value="xmed"> <label for="">Youth
+                                    Medium</label></li>
+                            <li><input type="checkbox" name="talles" id="xlar" value="xlar"> <label for="">Youth
+                                    Large</label></li>
+                            <li><input type="checkbox" name="talles" id="small" value="small"> <label
+                                    for="">Small</label></li>
+                        </ul>
+                    </div>
+                    <div class="medida">
+                        <ul>
+                            <li><input type="checkbox" name="talles" id="med" value="med"> <label for="">Medium</label>
+                            </li>
+                            <li><input type="checkbox" name="talles" id="larg" value="larg"> <label for="">Large</label>
+                            </li>
+                            <li><input type="checkbox" name="talles" id="extlar" value="extlar"> <label
+                                    for="">Extra-Large</label></li>
+                        </ul>
+                    </div>
+                </div>
+
             </fieldset>
             <div>
                 <p><b>Permission to Play</b></p>
-                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, includes the facilities used for practices and games, against any claim by or the behalf of the registrant as a result of the registrant’s participation in the program and/or being  transported to or from MDHL sponsored activities, which transportation.
-                    By singing bellow, I hereby agree and authorize the above. In addition, by singing bellow, I also acknowledge that I have read the cancellation policy and agree to its terms.
-                    </p>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
+                    injury associated with hockey and in consideration for the “League” accepting the registrant for its
+                    hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their
+                    employees and associated personnel and volunteers, includes the facilities used for practices and
+                    games, against any claim by or the behalf of the registrant as a result of the registrant’s
+                    participation in the program and/or being transported to or from MDHL sponsored activities, which
+                    transportation.
+                    By singing bellow, I hereby agree and authorize the above. In addition, by singing bellow, I also
+                    acknowledge that I have read the cancellation policy and agree to its terms.
+                </p>
             </div>
-            <fieldset>
+            <div class="signat">
+                <label for="">Parent/GuardianSignature:</label>
+                <input type="text">
+            </div>
+            <div class="datesignat"></div>
+            <label for="">Date: </label>
+            <input type="date" name="date" id="">
+            </div>
+            <div class="sub">
+                <input type="submit" value="Submit">
+            </div>
 
-            </fieldset>
         </form>
     </main>
+    <footer>
+        <p>MDHL</p>
+    </footer>
 </body>
 </html>

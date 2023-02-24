@@ -152,6 +152,7 @@ li{
 table{
     border-collapse: separate;
     border-spacing: 0;
+    padding-bottom: 20px;
 }
 
 td, th, tr{
@@ -196,61 +197,84 @@ h5{
 .container_tab img{
     display: flex;
     justify-content: space-around;
-    width: 550px;
+    width: 500px;
+    height: 500px;
     margin-top: 20px;
 }
 
-.school label{
-    display: table-cell;
-}
-.checkescuelas1{
-    display: inline-block;
-}
-.checkescuelas1 li{
-    list-style-type: none;
-    display: table-header-group;
-}
-.checkescuelas2{
-    display: inline-block;
-}
-.checkescuelas2 li{
-    list-style-type: none;
-    display: table-header-group;
+@media only screen and (max-width: 500px) {
+    table{
+        padding-bottom: 10px;
+        padding-left: 15px;
+        align-items: stretch;
+    }
+    
 }
 
-
-.posit label{
-    display: table-cell;
-}
-.checkposition1{
-    display: inline-block;
-}
-.checkposition1 li{
-    list-style-type: none;
-    display: table-header-group;
-}
-.checkposition2{
-    display: inline-block;
-}
-.checkposition2 li{
-    list-style-type: none;
-    display: table-header-group;
+@media only screen and (max-width: 500px) {
+    .container_tab img{
+        width: 300px;
+        height: 300px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    
 }
 
-.uniform label{
-    display: table-cell;
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    .container_tab img{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    
 }
-.checkmedidas1{
-    display: inline-block;
+
+div.school label{
+    display: block;
 }
-.checkmedidas1 li{
+
+div.escuelas{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.escuelas li{
     list-style-type: none;
     display: table-header-group;
 }
-.checkmedidas2{
-    display: inline-block;
+.escu1 ul{
+    margin-left: 0px;
 }
-.checkmedidas2 li{
+
+div.position{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.position li{
+    list-style-type: none;
+    display: table-header-group;
+}
+.pos1 ul{
+    margin-left: 0px;
+}
+
+div.talle{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.medida li{
+    list-style-type: none;
+    display: table-header-group;
+}
+.medida1 ul{
+    margin-left: 0px; 
+}
+
+.medida1 li{
     list-style-type: none;
     display: table-header-group;
 }
@@ -266,3 +290,19 @@ h5{
 p{
     text-indent: inherit;
 }
+
+.signat{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.sub{
+    padding-top: 10px;
+}
+.sub input{
+    width: 100px;
+    height: 25px;
+}
+
+
+
